@@ -4,7 +4,7 @@
  require("@nomiclabs/hardhat-waffle")
  require("@nomiclabs/hardhat-truffle5");
  const ALCHEMY_API_KEY = {ALCHEMY_PRIVATE_KEY};
- const RINKEBY_PRIVATE_KEY = {RINKEBY_PRIVATE_KEY};
+ const WALLET_PRIVATE_KEY = {RINKEBY_PRIVATE_KEY};
  
  module.exports = {
    solidity: "0.8.9",
@@ -12,7 +12,7 @@
    networks:{
      ropsten:{
        url:`https://eth-ropsten.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
-       accounts:[`${RINKEBY_PRIVATE_KEY}`],
+       accounts:[`${WALLET_PRIVATE_KEY}`],
  
      },
     localhost: {
